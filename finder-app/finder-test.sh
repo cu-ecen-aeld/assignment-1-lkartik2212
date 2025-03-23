@@ -59,6 +59,7 @@ done
 
 OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
 
+echo $OUTPUTSTRING
 # remove temporary directories
 rm -rf /tmp/aeld-data
 
@@ -70,4 +71,4 @@ if [ $? -eq 0 ]; then
 else
 	echo "failed: expected  ${MATCHSTR} in ${OUTPUTSTRING} but instead found"
 	exit 1
-fi
+fi 

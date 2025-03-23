@@ -18,5 +18,9 @@ void test_validate_my_username()
      * TODO: Replace the line below with your code here as described above to verify your /conf/username.txt 
      * config file and my_username() functions are setup properly
      */
-    TEST_ASSERT_TRUE_MESSAGE(false,"AESD students, please fix me!");
+    const char* (*my_name)();
+    my_name = my_username;
+    //TEST_ASSERT_TRUE_MESSAGE(true, "lkartik2212", my_name); //, "Expected and actual usernames are same");
+    TEST_ASSERT_TRUE_MESSAGE(my_name,"lkartik2212");
+
 }
